@@ -194,7 +194,7 @@ theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
 transitionSpeed: 'default',
 multiplex: {
-    secret: 'passw0rd', // null if client
+    secret: null, // null if client
     id: '1ea875674b17ca76', // id, obtained from socket.io server
     url: 'http://localhost:8000/' // Location of socket.io server
 },
@@ -202,7 +202,7 @@ multiplex: {
 // Optional libraries used to extend on reveal.js
 dependencies: [
  { src: 'http://cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.10/socket.io.min.js', async: true },
- { src: './plugin/multiplex/master.js', async: true }
+ { src: './plugin/multiplex/client.js', async: true }
 ]
 });
 </script>

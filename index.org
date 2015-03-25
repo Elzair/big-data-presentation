@@ -1,0 +1,70 @@
+#    -*- mode: org -*-
+#+REVEAL_ROOT: .
+#+OPTIONS: reveal_center:t reveal_progress:t reveal_history:t reveal_control:t
+#+OPTIONS: reveal_mathjax:t reveal_rolling_links:t reveal_keyboard:t reveal_overview:nil num:nil
+#+OPTIONS: reveal_width:1200 reveal_height:800
+#+OPTIONS: toc:1
+#+REVEAL_MARGIN: 0.2
+#+REVEAL_MIN_SCALE: 0.5
+#+REVEAL_MAX_SCALE: 2.5
+#+REVEAL_TRANS: none
+#+REVEAL_THEME: beige
+#+REVEAL_HLEVEL: 999
+#+REVEAL_EXTRA_CSS: ./presentation.css
+#+REVEAL_MULTIPLEX_ID: 1ea875674b17ca76
+#+REVEAL_MULTIPLEX_SECRET: passw0rd
+#+REVEAL_MULTIPLEX_URL: http://localhost:8000/
+#+REVEAL_SOCKET_HOST: http://localhost:8000
+#+REVEAL_MULTIPLEX_SOCKETIO_URL: http://cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.10/socket.io.min.js
+#+REVEAL_PLUGINS: (multiplex)
+
+#+TITLE: Big Data For Big Plans
+#+AUTHOR: Philip Woods
+#+EMAIL: pwoods@petsafe.net
+
+* What is Big Data?
+  
+  - Datasets large enough to render traditional data processing techniques inadequate 
+
+* Characteristics of Big Data -- 6 Vs 1C
+
+  - Volume: massive quantities of data
+  - Variety: different kinds of data
+  - Velocity: how fast data is generated or needs to be processed
+  - Variability: inconsistency shown by data at times
+  - Veracity: quality of captured data
+  - Complexity: connections needed to be made among data streams
+
+* Big Data Analysis -- 6 Cs
+
+  - Connection (sensor and networks)
+  - Cloud
+  - Cyber (data model and memory)
+  - Content/Context (meaning and correlation)
+  - Community (collaboration)
+  - Customization (personalization and value)
+
+* Big Data Processing Solution
+
+[[file:./hadoop-logo.jpg]]
+
+* Hadoop
+  - Framework for distributed processing of large datasets
+  - Based on MapReduce technique developed by Google
+* Hadoop Components
+  - [[http://cassandra.apache.org/][Cassandra]]: Scalable database with no single point of failure
+  - [[http://hbase.apache.org/][HBase]]: Distributed database supporting structured big tables
+  - [[http://hive.apache.org/][Hive]]: Data summarization and querying
+  - [[http://mahout.apache.org/][Mahout]]: Machine Learning & data mining library
+  - [[http://pig.apache.org/][Pig]]: Data-flow language for parallel computation
+  - [[http://spark.incubator.apache.org/][Spark]]: Compute engine
+
+* What Is Map Reduce?
+  
+* Will Our Data Be That Big?
+
+  "The funny thing is, many problems aren't big enough to use the fanciest big data solutions. Sure, companies like Google or Yahoo track all of our Web browsing; they have data files measured in petabytes or yottabytes. But most companies have data sets that can easily fit in the RAM of a basic PC. I'm writing this on a PC with 16GB of RAM -- enough for a billion events with a handful of bytes. In most algorithms, the data doesn't need to be read into memory because streaming it from an SSD is fine.There will be instances that demand the fast response times of dozens of machines in a Hadoop cloud running in parallel, but many will do just fine plugging along on a single machine without the hassles of coordination or communication."
+  [[http://www.infoworld.com/article/2609017/application-development/application-development-15-hot-programming-trends-and-15-going-cold.html][Peter Wayner, January 6, 2014]]
+* Even If It Is, Do We Need A Custom Solution?
+  So if you have Big Data and need to search and sort through the bulk of that data, then Hadoop may serve your purpose. If the majority of the data is structured or even unstructured but you are able to add structured meta-data describing the unstructured portion, and you want to run standard reports on the structured portion or retrieve individual unstructured elements (such as a single PDF document), then standard databases may suit your needs. If you have structured, semi-structured, or unstructured with structured meta-data, and want to run complex analyses on the data, to predict or ask questions outside of the standard reports, questions which cannot be prepared in advance (i.e. the types of queries most valuable to real Business Intelligence), then you probably need a column-based data store.
+  [[http://www.sand.com/hadoop-fits-big-data/][Steven Green]]
