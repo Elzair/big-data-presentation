@@ -13,8 +13,8 @@
 #+REVEAL_EXTRA_CSS: ./presentation.css
 #+REVEAL_MULTIPLEX_ID: 1ea875674b17ca76
 #+REVEAL_MULTIPLEX_SECRET: passw0rd
-#+REVEAL_MULTIPLEX_URL: http://localhost:8000/
-#+REVEAL_SOCKET_HOST: http://localhost:8000
+#+REVEAL_MULTIPLEX_URL: http://52.1.79.139:8000/
+#+REVEAL_SOCKET_HOST: http://52.1.79.139:8000
 #+REVEAL_MULTIPLEX_SOCKETIO_URL: http://cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.10/socket.io.min.js
 #+REVEAL_PLUGINS: (multiplex)
 
