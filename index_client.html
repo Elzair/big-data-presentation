@@ -195,13 +195,13 @@ transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/con
 transitionSpeed: 'default',
 multiplex: {
     secret: null, // null if client
-    id: '1ea875674b17ca76', // id, obtained from socket.io server
-    url: 'http://localhost:8000/' // Location of socket.io server
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
 },
 
 // Optional libraries used to extend on reveal.js
 dependencies: [
- { src: 'http://cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.10/socket.io.min.js', async: true },
+ { src: '', async: true },
  { src: './plugin/multiplex/client.js', async: true }
 ]
 });

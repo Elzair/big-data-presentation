@@ -6,8 +6,9 @@
   "subdomain": "revealjs",
   "scripts": {
     "test": "grunt test",
-    "start": ""
+    "start": "grunt serve"
   },
+  "main": "plugin/hosted/index.js",
   "author": {
     "name": "Hakim El Hattab",
     "email": "hakim.elhattab@gmail.com",
